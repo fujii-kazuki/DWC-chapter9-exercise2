@@ -13,6 +13,58 @@
   padding: 50px 0;
 }
 
+.flow-items {
+  width: 960px;
+  margin: 0 auto;
+  display: flex;
+  list-style: none;
+}
+
+.flow-item {
+  width: 300px;
+  background-color: #EEE;
+  padding: 10px;
+  position: relative;
+}
+
+.flow-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.flow-item-num {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: white;
+  background-color: orange;
+}
+
+.flow-item-img {
+  height: 150px;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.flow-item:nth-child(1) .flow-item-img {
+  background-image: url(img/flow01.png)
+}
+
+.flow-item:nth-child(2) .flow-item-img {
+  background-image: url(img/flow02.png)
+}
+
+.flow-item:nth-child(3) .flow-item-img {
+  background-image: url(img/flow03.png)
+}
+
+.flow-item-heading {
+  margin-top: 15px;
+}
+
+.flow-item-description {
+  margin-top: 5px;
+}
+
 .footer {
   height: 50px;
   background-color: #AAA;
